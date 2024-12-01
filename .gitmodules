@@ -1,4 +1,4 @@
 [submodule "iced"]
 	path = iced
-	url = https://github.com/pop-os/iced.git
+	url = https://github.com/netraptor/cosmic-iced.git
 	branch = master
