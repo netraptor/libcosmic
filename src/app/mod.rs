@@ -118,6 +118,13 @@ pub(crate) fn iced_settings<App: Application>(
         window_settings.resizable = true;
     }
     window_settings.decorations = !settings.client_decorations;
+    #[cfg(target_os = "macos")]
+    {
+        if !window_settings.decorations {
+            window_settings.decorations = true;
+            window_settings.platform_specific.titlebar_hidden = true;
+        }
+    }
     window_settings.size = settings.size;
     let min_size = settings.size_limits.min();
     if min_size != iced::Size::ZERO {
