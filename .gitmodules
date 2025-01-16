@@ -1,4 +1,4 @@
 [submodule "iced"]
 	path = iced
 	url = https://github.com/netraptor/cosmic-iced.git
-	branch = master
+	branch = win-drag-fix-part2
